@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media screen and (max-width:400px) {
+            div.main1{
+                background-color:black;
+             }
+             .main2,.main3{
+                display: none !important;
+             }
+
+            
+        }
+        .main1{
+            border: 2px solid black;
+            height: 500px;
+            width: 600px;
+            background-color:rgb(49, 3, 3);
+            display: grid;
+            grid-template-rows: auto auto auto auto;
+            grid-template-columns:repeat(4,auto);
+            gap:10px;
+            padding: 20px;
+            
+            
+            }
+            .data1{
+                background-color:rgb(255, 240, 33);
+                display:grid;
+                justify-content: center;
+                align-items: center;
+               
+                
+            }
+            .cd1{
+               grid-column-start: 2;
+               grid-column-end:4;
+            }
+
+            @media screen and (min-width:401px) and (max-width:600px) {
+            div.main2{
+                background-color:rgb(195, 97, 97);
+
+            }
+            .main1,.main3{
+                display: none !important;
+             }
+            
+        }
+    
+    .main2{
+        border: 2px solid rgb(0, 0, 0);
+        height: 350px;
+        width: 800px;
+        background-color:gray;
+        display: grid;
+        grid-template-rows: 100px 100px 100px 100px 100px;
+        grid-template-columns:150px 150px 150px 150px 150px;
+        gap: 10px;
+        padding: 20px;
+        
+        
+        
+        }
+        .data2{
+            background-image:linear-gradient(blue,white);
+            
+           
+            
+        }
+            .cdd1{
+              grid-column-start:2;
+              grid-column-end:6;
+            }
+            .cdd2{
+                grid-row-start:1;
+                grid-row-end: 4;
+             
+            }
+            .cdd3{
+                grid-row-start:2;
+                grid-row-end:4;
+            }
+            .cdd4{
+                grid-row-start:2;
+                grid-row-end:4;
+            }
+            .cdd5{
+                grid-row-start:2;
+                grid-row-end:4;
+            }
+            .cdd6{
+                grid-row-start:2;
+                grid-row-end:4;
+            }
+            img{
+                height: 100%;
+                width: 100%;
+            }
+
+        
+
+            
+            @media screen and (min-width:601px) and (max-width:900px)
+             {
+            div.main3{
+                background-color:blue;
+                
+            }
+            .main1,.main2{
+                display: none !important;
+             }
+
+            }
+
+        .main3{
+            border: solid 2px;
+            height: 350px;
+            width:650px;
+            padding: 50px;
+            background-color:navy;
+            display:grid;
+            grid-template-columns:repeat(3,200px);
+            grid-template-rows: repeat(3,100px);
+            gap:10px;
+            align-items: center;
+            justify-content: center;
+            
+            
+        
+            
+            
+        }
+        .data3
+        {   
+            background-color: yellow;
+            height: 100%;
+           font-size: 25px;
+           font-weight: bold;
+           display: grid;
+            justify-content: center;
+            align-items: center;
+            
+           
+           
+
+        }
+        .cd1{
+    grid-column:1/4;
+        }
+        .cd2{
+            grid-row: 2/4;
+        }
+    .cd3{
+        grid-row:2/2;
+    }
+    .cd4{
+        grid-row:2/2
+    }
+    .cd5{
+        grid-row:4/3;
+        grid-column:2/4;
+        
+    }
+
+</style>
+</head>
+<body>
+    <div class="main1">
+        <div class="data1 cd1">1</div>
+        <div class="data1 cd1">2</div>
+        <div class="data1 cd1">3</div>
+        <div class="data1 cd1">4</div>
+        <div class="data1 cd1">5</div>
+        <div class="data1 cd1">6</div>
+       
+
+    </div><br><br>
+
+    <div class="main2">
+        <div class="data2 cdd1"><img src="../html/multimedia/pexels-pixabay-355508.jpg" alt=""></div>
+        <div class="data2 cdd2"><img src="../html/multimedia/wall.webp"></div>
+        <div class="data2 cdd3"><img src="../html/multimedia/mahesh.jpeg"></div>
+        <div class="data2 cdd4"><img src="../html/multimedia/flowers-276014_640.jpg" alt=""></div>
+        <div class="data2 cdd5"><img src="../html/multimedia/creative-light-bulb-abstract-glowing-blue-background-generative-ai_188544-8090.avif" alt=""></div>
+        <div class="data2 cdd6"><img src="../html/multimedia/prabash.jpeg" alt=""></div>
+       
+
+    </div><br><br>
+
+    <div class="main3">
+        <div class="data3 cd1">Heder</div>
+        <div class="data3 cd2">Menu</div>
+        <div class="data3 cd3">Left</div>
+        <div class="data3 cd4">Right</div>
+        <div class="data3 cd5">Footer</div>
+        </div>
+</body>
+</html>
